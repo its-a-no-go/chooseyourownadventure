@@ -23,7 +23,7 @@ alert('Please type all answers going forward in lower case');
 //if statement 1 
 let answer1 = prompt('Do you "join the group" or do you "watch from afar"?');
 if (answer1 === 'join the group') {
-    console.log('Great. The letter said to bring a steel furnace. Yes or no, did you bring a steel fernace? ');
+    console.log('Great. The letter said to bring a steel furnace. Yes or no, did you bring a steel furnace? ');
     //if statement 2
     let answer2 = prompt('Yes or no, did you bring a steel furnace?');
     if (answer2 === 'yes') {
