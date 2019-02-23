@@ -1,9 +1,9 @@
 //three inital prompts
-let roomName = prompt('Please type the name of a room in your house. Ex: living room, kitchen, etc.');
+const roomName = prompt('Please type the name of a room in your house. Ex: living room, kitchen, etc.');
 
-let parterName = prompt('Please type a name');
+const parterName = prompt('Please type a name');
 
-let reaction = prompt('Please type a reaction, using a capital letter. Ex: Confused, Purplexed, Curious, Excitedly, Frustrated, etc.');
+const reaction = prompt('Please type a reaction, using a capital letter. Ex: Confused, Purplexed, Curious, Excitedly, Frustrated, etc.');
 
 
 
