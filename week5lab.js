@@ -1,37 +1,41 @@
 //three inital prompts
-let prompt1 = prompt('Please type the name of a room in your house. Ex: living room, kitchen, etc.');
+const roomName = prompt('Please type the name of a room in your house. Ex: living room, kitchen, etc.');
 
-let prompt2 = prompt('Please type a name');
+const parterName = prompt('Please type a name');
 
-let prompt3 = prompt('Please type a reaction, using a capital letter. Ex: Confused, Purplexed, Curious, Excitedly, Frustrated, etc.');
+const reaction = prompt('Please type a reaction, using a capital letter. Ex: Confused, Purplexed, Curious, Excitedly, Frustrated, etc.');
 
 
 
 //console output for inital prompts and setting the scene
-console.log('You and ' +
-    prompt2 + ' are at your house hanging out in the ' +
-    prompt1 + ' when you hear someone deliver a letter through the mail slot in your front door. ' +
-    prompt3 + ', you approach the letter and start to read. The letter is nonsensical but is ' +
-    'encouraging you to attend a mysterious meeting that will be held on April 27, 2019 at 27th and Girard Avenue. ' +
-    ' April 27 has finally arrived! You and ' +
-    prompt2 + ' are so excited to see what is going on that you recruited several other friends to ' +
-    'come with you to see what the letter was all about. You have arrived at 27th and Girard Avenue.' +
-    ' Do you "join the group" or do you "watch from afar"?');
+console.log(`You and ${parterName} are at your house hanging out in the 
+${roomName} when you hear someone deliver a letter through the mail
+slot in your front door. ${reaction}, you approach the letter and
+start to read. The letter is nonsensical but is'encouraging you to
+attend a mysterious meeting that will be held on
+April 27, 2019 at 27th and Girard Avenue. 
+
+April 27 has finally arrived! You and ${parterName} are so excited
+to see what is going on that you recruited several other friends to 
+come with you to see what the letter was all about. You have arrived
+at 27th and Girard Avenue.
+    
+Do you "join the group" or do you "watch from afar"?`);
 
 alert('Please type all answers going forward in lower case');
 
 //if statement 1 
-let answer1 = prompt('Do you "join the group" or do you "watch from afar"?');
-if (answer1 === 'join the group') {
+let joinOrWatchAnswer = prompt('Do you "join the group" or do you "watch from afar"?');
+if (joinOrWatchAnswer === 'join the group') {
     console.log('Great. The letter said to bring a steel fernace. Yes or no, did you bring a steel fernace? ');
     //if statement 2
-    let answer2 = prompt('Yes or no, did you bring a steel fernace?');
-    if (answer2 === 'yes') {
+    let broughtSteelFuranceAnswer = prompt('Yes or no, did you bring a steel fernace?');
+    if (broughtSteelFuranceAnswer === 'yes') {
         console.log('Cool. Your steel furnace is used to provide others with salvation. In the letter you are given ' +
             'the option of being sedated first. Yes or no, would you like to be sedated?');
         //if statement 3 
-        let answer3 = prompt('yes or no, would you like to be sedated?');
-        if (answer3 === 'yes') {
+        let wantSedationAnswer = prompt('yes or no, would you like to be sedated?');
+        if (wantSedationAnswer === 'yes') {
             console.log('You have chosen to be sedated. Who knows what happens next.' +
                 ' For context check out this url: https://billypenn.com/2019/02/18/philly-police-on-that-creepy-fairmount-letter-report-it-whatever-it-is/. ' +
                 'Do attend. The end.');
@@ -39,27 +43,27 @@ if (answer1 === 'join the group') {
         } else {
             console.log('You have chosen not to sedate. You brave soul, you.  I bet if you were a doctor you would be the kind that ' +
                 'opperates on yourself. If you were a dentist, you would work on your own filling or extract your own tooth. Is this true of you?');
-            let answer9 = prompt('Please type yes if you would opperate on yourself or type "heck no" if you would never even consider it ');
-            if (answer9 === 'yes') {
+            let operateOnSelfAnswer = prompt('Please type yes if you would opperate on yourself or type "heck no" if you would never even consider it ');
+            if (operateOnSelfAnswer === 'yes') {
                 console.log('You are the true hero amongst us. I bet you also file your own taxes and call your mom every Sunday. The end');
             }
         }
         //else statement 2        
     } else {
-        (answer2 === 'no')
+        (broughtSteelFuranceAnswer === 'no')
         console.log('You have chosen not to bring a steel furnace.  The lot at 27th and Girard Avenue is vacant.  Do you think ' +
             'it would benefit from being developed, or should it stay vacant?');
-        let answer7 = prompt('Please type yes if you think the lot should be developed or type stay vacant if you think it should stay vacant');
-        if (answer7 === 'yes') {
+        let developLotAnswer = prompt('Please type yes if you think the lot should be developed or type stay vacant if you think it should stay vacant');
+        if (developLotAnswer === 'yes') {
             console.log('Interesting choice. Do you think the lot should be developed into a shrine consisting of steel statues ' +
                 'made of "metal [that] can be melted and the bodies of people and animals mixed with the metal to become steel unable to be hurt?" ' +
                 'a simple yes or no will suffice!')
         } else {
             console.log('Well...apparently, in March 2014 OCF Reality announced plans for "a major mixed use ' +
                 'project at 27th and Girard Avenue".  Would you like to go back in time to stop said development? ');
-            let answer8 = prompt('Please type yes if you would like to time travel to stop said development or type no if you would ' +
+            let timeTravelAnswer = prompt('Please type yes if you would like to time travel to stop said development or type no if you would ' +
                 'prefer not to.');
-            if (answer8 === 'yes') {
+            if (timeTravelAnswer === 'yes') {
                 console.log('You go you time traveler, you');
             } else {
                 console.log('So you do not want any development and you do not want to time travel, either? Snooze');
